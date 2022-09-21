@@ -27,3 +27,6 @@ require('lualine').setup {
     }
 }
 require('nvim-autopairs').setup{}
+
+
+vim.cmd "source vim/coc.vim"
