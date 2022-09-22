@@ -33,6 +33,7 @@
     "diagnostic.virtualText": true,
     "diagnostic.checkCurrentLine": true,
     "diagnostic.separateRelatedInformationAsDiagnostics": true,
+    "diagnostic.enableMessage": "jump",
     "eslint.autoFixOnSave": true,
     "eslint.format.enable": true,
     "eslint.packageManager": "yarn",
