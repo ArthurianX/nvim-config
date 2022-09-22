@@ -9,16 +9,17 @@ vim.g.loaded_netrwPlugin = 1
 vim.g.mapleader = " "
 vim.g.localleader = "\\"
 
+vim.cmd "source ~/.config/nvim/vim/coc.vim"
+
 -- IMPORTS
 require('vars')      -- Variables
 require('opts')      -- Options
 require('keys')      -- Keymaps
 require('plug')      -- Plugins
+require('theme')     -- Color theme settings
 
 -- PLUGINS
 require('nvim-tree').setup()
-local dracula = require("dracula")
-dracula.setup()
 
 vim.cmd[[colorscheme dracula]]
 require('lualine').setup {
@@ -27,6 +28,14 @@ require('lualine').setup {
     }
 }
 require('nvim-autopairs').setup{}
-
-
-vim.cmd "source ~/.config/nvim/vim/coc.vim"
+require 'colorizer'.setup {
+  'css';
+  'sass';
+  'javascript';
+  'typescript';
+  'javascriptreact';
+  'typescriptreact';
+  html = {
+    mode = 'foreground';
+  }
+}

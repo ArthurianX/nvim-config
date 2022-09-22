@@ -32,6 +32,6 @@ use {
   use {'jparise/vim-graphql'}
   use {'nvim-treesitter/nvim-treesitter'}
   use {'tpope/vim-surround'}
-  
+  use {'norcalli/nvim-colorizer.lua'}  
 end)
 
