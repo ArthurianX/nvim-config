@@ -37,5 +37,8 @@ require 'colorizer'.setup {
     mode = 'foreground';
   }
 }
-
+require("auto-save").setup {
+    debounce_delay=1500
+}
+	
 vim.cmd "source ~/.config/nvim/vim/coc.vim"

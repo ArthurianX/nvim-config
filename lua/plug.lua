@@ -33,6 +33,6 @@ use {
   use {'nvim-treesitter/nvim-treesitter'}
   use {'tpope/vim-surround'}
   use {'norcalli/nvim-colorizer.lua'}  
-  use {'pocco81/auto-save.nvim'}
+  use {'Pocco81/auto-save.nvim'} 
 end)
 
