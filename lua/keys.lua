@@ -8,5 +8,8 @@ map('i', 'jk', '', {})
 map('n', 'nn', [[:NvimTreeToggle]], {})
 
 -- Toggle more plugins
-map('n', 'l', [[:IndentLinesToggle]], {})
+-- map('n', 'l', [[:IndentLinesToggle]], {})
 map('n', 'ff', [[:Telescope find_files]], {})
+
+-- Show Coc diagnostics for current line
+map('n', ';;', [[:call CocAction('diagnosticInfo') <CR>]], {})

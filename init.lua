@@ -9,8 +9,6 @@ vim.g.loaded_netrwPlugin = 1
 vim.g.mapleader = " "
 vim.g.localleader = "\\"
 
-vim.cmd "source ~/.config/nvim/vim/coc.vim"
-
 -- IMPORTS
 require('vars')      -- Variables
 require('opts')      -- Options
@@ -39,3 +37,5 @@ require 'colorizer'.setup {
     mode = 'foreground';
   }
 }
+
+vim.cmd "source ~/.config/nvim/vim/coc.vim"
