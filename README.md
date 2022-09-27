@@ -1,6 +1,9 @@
 # My personal Neovim configurations.
 This repository was created for personal usage.
 
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/2720451/192451882-85866e16-a8a0-48ee-9890-5a9f268850ce.png">
+
+
 Main guidelines:
   - Highly Documented and well organized.
     - Organize everything by what it relates to, like the main editor, a specific plugin, etc...
