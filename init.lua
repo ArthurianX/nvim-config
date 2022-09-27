@@ -38,7 +38,7 @@ require 'colorizer'.setup {
   }
 }
 require("auto-save").setup {
-    debounce_delay=1500
+    debounce_delay=2500
 }
 	
 vim.cmd "source ~/.config/nvim/vim/coc.vim"
