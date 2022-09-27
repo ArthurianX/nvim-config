@@ -19,7 +19,6 @@ require('theme')     -- Color theme settings
 -- PLUGINS
 require('nvim-tree').setup()
 
-vim.cmd[[colorscheme dracula]]
 require('lualine').setup {
     options = {
         theme = 'dracula'

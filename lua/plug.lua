@@ -8,7 +8,6 @@ return require('packer').startup(function(use)
   },
   tag = 'nightly' -- optional, updated every week. (see issue #1193)
 }
-use {'Mofiqul/dracula.nvim'}
 use {
   'nvim-lualine/lualine.nvim',
   requires = { 'kyazdani42/nvim-web-devicons', opt = true }
@@ -34,5 +33,6 @@ use {
   use {'tpope/vim-surround'}
   use {'norcalli/nvim-colorizer.lua'}  
   use {'Pocco81/auto-save.nvim'} 
+  use {'EdenEast/nightfox.nvim'}
 end)
 
