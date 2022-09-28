@@ -24,13 +24,7 @@ require('nightfox').setup({
       visual = false,
       search = false,
     },
-    modules = {             -- List of various plugins and additional options
-      -- ...
-    },
   },
-  palettes = {},
-  specs = {},
-  groups = {},
 })
 
 vim.cmd[[colorscheme nightfox]]
