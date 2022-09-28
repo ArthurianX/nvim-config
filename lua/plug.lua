@@ -34,5 +34,6 @@ use {
   use {'norcalli/nvim-colorizer.lua'}  
   use {'Pocco81/auto-save.nvim'} 
   use {'EdenEast/nightfox.nvim'}
+  use {'folke/which-key.nvim'}
 end)
 

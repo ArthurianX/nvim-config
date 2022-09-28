@@ -1,5 +1,4 @@
 --[[ init.lua ]]
-
 vim.g.loaded = 1
 vim.g.loaded_netrwPlugin = 1
 
@@ -21,7 +20,7 @@ require('nvim-tree').setup()
 
 require('lualine').setup {
     options = {
-        theme = 'dracula'
+        theme = 'nightfox'
     }
 }
 require('nvim-autopairs').setup{}
@@ -39,5 +38,13 @@ require 'colorizer'.setup {
 require("auto-save").setup {
     debounce_delay=2500
 }
-	
+
+local wk = require("which-key")
+wk.register({
+  ["<leader>f"] = { name = "+file" },
+  ["<leader>ff"] = { "<cmd>Telescope find_files<cr>", "Find File" },
+  ["<leader>fr"] = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
+  ["<leader>fn"] = { "<cmd>enew<cr>", "New File" },
+})
+
 vim.cmd "source ~/.config/nvim/vim/coc.vim"
