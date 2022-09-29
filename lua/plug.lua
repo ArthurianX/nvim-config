@@ -2,23 +2,26 @@
 return require('packer').startup(function(use)
   -- [[ Plugins Go Here ]]
   use {
-  'kyazdani42/nvim-tree.lua',
-  requires = {
-    'kyazdani42/nvim-web-devicons', -- optional, for file icons
-  },
-  tag = 'nightly' -- optional, updated every week. (see issue #1193)
-}
-use {
-  'nvim-lualine/lualine.nvim',
-  requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-}
-use {'danilamihailov/beacon.nvim'}
-use {'mhinz/vim-startify'}
--- [[ DEV ]]
-use {
-    'nvim-telescope/telescope.nvim',                 -- fuzzy finder
-    requires = { {'nvim-lua/plenary.nvim'} }
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icons
+    },
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
+  use {'danilamihailov/beacon.nvim'}
+  use {'mhinz/vim-startify'}
+  
+  -- [[ DEV ]]
+  use {'AckslD/nvim-neoclip.lua'}
+  use {'kkharji/sqlite.lua', module = 'sqlite'}
+  use {
+      'nvim-telescope/telescope.nvim',                 -- fuzzy finder
+      requires = { {'nvim-lua/plenary.nvim'} }
+    }
   use { 'Yggdroot/indentLine' }                      -- see indentation
   use { 'tpope/vim-fugitive' }                       -- git integration
   use { 'junegunn/gv.vim' }                          -- commit history
@@ -35,5 +38,7 @@ use {
   use {'Pocco81/auto-save.nvim'} 
   use {'EdenEast/nightfox.nvim'}
   use {'folke/which-key.nvim'}
-end)
+  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+  
+  end)
 

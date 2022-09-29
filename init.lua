@@ -8,6 +8,17 @@ vim.g.loaded_netrwPlugin = 1
 vim.g.mapleader = " "
 vim.g.localleader = "\\"
 
+-- Some startify bookmarks
+vim.g.startify_bookmarks = {
+    "~/.zshrc", 
+    "~/.config/nvim", 
+    "~/Sites", 
+    "~/Sites/mobile-client", 
+    "~/Sites/arthur-kovacs-is", 
+    "~/Sites/reactblitz"
+}
+
+
 -- IMPORTS
 require('vars')      -- Variables
 require('opts')      -- Options
@@ -31,6 +42,7 @@ require 'colorizer'.setup {
   'typescript';
   'javascriptreact';
   'typescriptreact';
+  'rust';
   html = {
     mode = 'foreground';
   }
@@ -39,12 +51,10 @@ require("auto-save").setup {
     debounce_delay=2500
 }
 
-local wk = require("which-key")
-wk.register({
-  ["<leader>f"] = { name = "+file" },
-  ["<leader>ff"] = { "<cmd>Telescope find_files<cr>", "Find File" },
-  ["<leader>fr"] = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
-  ["<leader>fn"] = { "<cmd>enew<cr>", "New File" },
-})
+require('which-key').setup{}
+
+-- Telescope Extensions
+require('telescope').load_extension('fzf')
+require('telescope').load_extension('neoclip')
 
 vim.cmd "source ~/.config/nvim/vim/coc.vim"
