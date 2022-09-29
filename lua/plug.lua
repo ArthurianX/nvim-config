@@ -39,6 +39,10 @@ return require('packer').startup(function(use)
   use {'EdenEast/nightfox.nvim'}
   use {'folke/which-key.nvim'}
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
-  
-  end)
+  use {'lewis6991/gitsigns.nvim'}
+  use {
+    'romgrk/barbar.nvim',
+    requires = {'kyazdani42/nvim-web-devicons'}
+  }
+end)
 
