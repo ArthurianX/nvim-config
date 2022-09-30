@@ -1,6 +1,7 @@
 -- [[ plug.lua ]]
 return require('packer').startup(function(use)
   -- [[ Plugins Go Here ]]
+  use { 'wbthomason/packer.nvim' }
   use {
     'kyazdani42/nvim-tree.lua',
     requires = {
