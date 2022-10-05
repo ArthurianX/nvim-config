@@ -48,7 +48,7 @@ require 'colorizer'.setup {
   }
 }
 require("auto-save").setup {
-    debounce_delay=2500
+    trigger_events = {"InsertLeave", "FocusLost"},
 }
 
 require('which-key').setup{}
@@ -128,4 +128,7 @@ require'bufferline'.setup {
 require('telescope').load_extension('fzf')
 require('telescope').load_extension('neoclip')
 
+
+-- CoC.nvim settings
+let g:coc_global_extensions = ['coc-json', 'coc-deno', 'coc-eslint', 'coc-prettier', 'coc-html-css-support', 'coc-tsserver', 'coc-rust-analyzer']
 vim.cmd "source ~/.config/nvim/vim/coc.vim"

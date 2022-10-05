@@ -18,32 +18,26 @@ map('n', '<leader>fb', [[:Telescope buffers <CR>]], {desc = "Telescope buffers"}
 map('n', '<leader>fh', [[:Telescope help_tags <CR>]], {desc = "Telescope help tags"})
 map('n', '<leader>fp', [[:Telescope neoclip <CR>]], {desc = "Telescope neoclip"})
 
-
--- nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
--- nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
--- nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
--- nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
-
 -- Show Coc diagnostics for current line
 map('n', '<leader>;;', [[:call CocAction('diagnosticInfo') <CR>]], {desc = "Diagnostic Info"})
 
 -- Move to previous/next
-map('n', '<C-,>', '<Cmd>BufferPrevious<CR>', opts)
-map('n', '<C-.>', '<Cmd>BufferNext<CR>', opts)
+map('n', '<C-,>', '<Cmd>BufferPrevious<CR>', {desc = "Previous Tab"})
+map('n', '<C-.>', '<Cmd>BufferNext<CR>', {desc = "Next Tab"})
 -- Re-order to previous/next
 map('n', '<C-<>', '<Cmd>BufferMovePrevious<CR>', opts)
 map('n', '<C->>', '<Cmd>BufferMoveNext<CR>', opts)
 -- Goto buffer in position...
-map('n', '<C-1>', '<Cmd>BufferGoto 1<CR>', opts)
-map('n', '<C-2>', '<Cmd>BufferGoto 2<CR>', opts)
-map('n', '<C-3>', '<Cmd>BufferGoto 3<CR>', opts)
-map('n', '<C-4>', '<Cmd>BufferGoto 4<CR>', opts)
-map('n', '<C-5>', '<Cmd>BufferGoto 5<CR>', opts)
-map('n', '<C-6>', '<Cmd>BufferGoto 6<CR>', opts)
-map('n', '<C-7>', '<Cmd>BufferGoto 7<CR>', opts)
-map('n', '<C-8>', '<Cmd>BufferGoto 8<CR>', opts)
-map('n', '<C-9>', '<Cmd>BufferGoto 9<CR>', opts)
-map('n', '<C-0>', '<Cmd>BufferLast<CR>', opts)
+-- map('n', '<C-1>', '<Cmd>BufferGoto 1<CR>', opts)
+-- map('n', '<C-2>', '<Cmd>BufferGoto 2<CR>', opts)
+-- map('n', '<C-3>', '<Cmd>BufferGoto 3<CR>', opts)
+-- map('n', '<C-4>', '<Cmd>BufferGoto 4<CR>', opts)
+-- map('n', '<C-5>', '<Cmd>BufferGoto 5<CR>', opts)
+-- map('n', '<C-6>', '<Cmd>BufferGoto 6<CR>', opts)
+-- map('n', '<C-7>', '<Cmd>BufferGoto 7<CR>', opts)
+-- map('n', '<C-8>', '<Cmd>BufferGoto 8<CR>', opts)
+-- map('n', '<C-9>', '<Cmd>BufferGoto 9<CR>', opts)
+-- map('n', '<C-0>', '<Cmd>BufferLast<CR>', opts)
 -- Pin/unpin buffer
 map('n', '<C-p>', '<Cmd>BufferPin<CR>', opts)
 -- Close buffer
