@@ -130,5 +130,5 @@ require('telescope').load_extension('neoclip')
 
 
 -- CoC.nvim settings
-let g:coc_global_extensions = ['coc-json', 'coc-deno', 'coc-eslint', 'coc-prettier', 'coc-html-css-support', 'coc-tsserver', 'coc-rust-analyzer']
+vim.g.coc_global_extensions = {'coc-json', 'coc-deno', 'coc-eslint', 'coc-prettier', 'coc-html-css-support', 'coc-tsserver', 'coc-rust-analyzer', 'coc-cssmodules'}
 vim.cmd "source ~/.config/nvim/vim/coc.vim"
