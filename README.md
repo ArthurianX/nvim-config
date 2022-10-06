@@ -2,7 +2,7 @@
 
 This repository was created for personal usage.
 
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/2720451/192451882-85866e16-a8a0-48ee-9890-5a9f268850ce.png">
+<img width="1710" alt="image" src="https://user-images.githubusercontent.com/2720451/194246212-a3e9747f-6eaa-404a-b59b-133471dd5654.png">
 
 Main guidelines:
 
