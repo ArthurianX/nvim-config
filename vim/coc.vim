@@ -164,4 +164,4 @@ vnoremap <leader>P "+P
 " Some neovide settings, will be ignored by nvim
 let g:neovide_transparency=0.0
 let g:transparency = 0.95
-let g:neovide_background_color = '#0f1117'.printf('%x', float2nr(255 * g:transparency))
+let g:neovide_background_color = '#192330'.printf('%x', float2nr(255 * g:transparency))
