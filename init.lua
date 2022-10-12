@@ -13,7 +13,7 @@ vim.g.startify_bookmarks = {
     "~/.zshrc", 
     "~/.config/nvim", 
     "~/Sites", 
-    "~/Sites/mobile-client", 
+    "~/Sites/sportsbook", 
     "~/Sites/arthur-kovacs-is", 
     "~/Sites/reactblitz"
 }
