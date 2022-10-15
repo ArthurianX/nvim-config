@@ -165,4 +165,5 @@ vnoremap <leader>P "+P
 let g:neovide_transparency=0.0
 let g:transparency = 0.95
 let g:neovide_background_color = '#192330'.printf('%x', float2nr(255 * g:transparency))
-set guifont=FiraCode\ NF:h14
+" set guifont=FiraCode\ NF:h14
+set guifont=FiraCode\ NFM:h16
